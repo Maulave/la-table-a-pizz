@@ -1,0 +1,720 @@
+:root {
+    --text-color: #fff;
+    --primary: #ff9900;
+    --primary-light: #ffb74a;
+    --primary-dark: #272727;
+    --background-dark: #060606;
+    --box-shadow: 0px 0px 8px 4px rgb(20, 20, 20);
+    --separatorLight: #ffb74a;
+    --font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+ul {
+    list-style: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  SCROLLBAR                                 */
+/* -------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #3b3b3b;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+    position: fixed;
+    background: rgb(0, 0, 0, .5);
+    z-index: 3;
+}
+
+.container1{
+    max-width: 1100PX;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.container1 a:hover{
+    color: var(--primary);
+}
+
+.container1 a img {
+    height: 40px;
+    width: 40px;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out.2s;
+}
+
+.header a:hover {
+    color:#e58e00;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  NAV MOBILE                                */
+/* -------------------------------------------------------------------------- */
+
+#navMobile {
+    display: none;
+}
+
+#navMobile #btnMenu:hover {
+    background: #1a1a1a;  
+}
+
+#navMobile .btn {
+    padding: 10px;
+    border-radius: 0.25rem;
+    border: 0.5px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+#navMobile #btnMenu {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+
+#navMobile #btnMenu img {
+    width: 25px;
+    margin: 10px;
+}
+
+#fullMenu {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.9);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fullMenu #closeFullMenu {
+    height: 30px;
+    width: 30px;
+    float: right;
+    background-color: rgba(238, 130, 238, 0);
+    border: none;
+    margin: 30px 50px;
+    cursor: pointer;
+    align-self: flex-end;
+    position: absolute;
+    top: 0;
+    z-index: -100;
+}
+
+#fullMenu #closeFullMenu  img{
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+#fullMenu #closeFullMenu  img:hover{
+    opacity: 0.4;
+}
+
+#fullMenu ul {
+    font-size: 30px;
+    height: 250px;
+    text-align: center;
+    font-weight: 100;
+}
+
+
+#fullMenu ul li {
+    height: 65px;
+}
+
+#fullMenu ul li a {
+    font-weight: 400;
+    height: 65px;
+    transition: 0.4s ease-in-out;
+}
+
+#fullMenu ul li a:hover {
+    opacity: 0.2;
+}
+
+#fullMenu #socialMedia {
+    margin: 26px 5px 5px 5px;
+}
+
+#fullMenu #socialMedia a:hover {
+    opacity: 0.4;
+}
+
+#fullMenu #socialMedia a {
+    margin: 0 10px;
+    height: 45px;
+    transition: ease-in-out 0.2s;
+}
+
+#fullMenu #socialMedia img {
+    height: 45px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  HEADER 2                                  */
+/* -------------------------------------------------------------------------- */
+
+.header2{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 40rem;
+    height: 42rem;
+    position: relative;
+    width: 100%;
+}
+
+.imagebackground {
+    background-image: url('/image.img/pizza-fond2.jpg');
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    object-position: 50% 50%;
+    background-position: 50% calc(50% - 200px);
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+
+
+.container2 .titleblock {
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 230px);
+}
+
+
+.titrePhoto{
+    color: var(--text-color);
+    font-family: 'Staatliches', cursive;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+
+.texteTitre{
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+button{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 12rem;
+    height: 4rem;
+    font-family: 'Staatliches', cursive;
+    font-size: 22px;
+    background: var(--primary);    
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background:var(--primary);
+}
+
+
+/*-------------------------------
+  -  Article - Aside (contenu)  -
+  -------------------------------*/
+
+
+#contenu{
+    padding: 5rem 20px;
+    background: var(--primary-dark);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pizzeria{
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    object-position: 50% 50%;
+}
+
+.wiwi {
+    box-shadow: var(--box-shadow);
+}
+
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: nowrap row;
+    max-width: 1100px;
+    width: 100%;
+    background: var(--primary);
+    overflow: hidden;
+}
+
+.container4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: nowrap row;
+    max-width: 1100px;
+    width: 100%;
+    background: var(--primary);
+}
+
+.space2{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2rem;
+    width: 50%;
+}
+
+.space5{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenuTitre{
+    margin-bottom: 2rem;
+    color: var(--primary-dark);
+    font-family: 'Staatliches', 'cursive';
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.contenuTexte{
+    color: var(--text-color);
+    line-height: 28px;
+    letter-spacing: 0.3px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    max-width: 650px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    CARTE                                   */
+/* -------------------------------------------------------------------------- */
+
+
+#cartepizza{
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.space3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 20px;
+}
+
+.menuTitre{
+    color: var(--text-color);
+    font-family: 'Staatliches', cursive;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+.menuDescription{
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+/*-------------------------------
+  -           Carte             -
+  -------------------------------*/
+
+
+.cartepizza{
+    width: 100%;
+    background-image: url("/image.img/Fond-menu5.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 20px;
+}
+
+
+.container12{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+.taille{
+    display: flex;
+    flex-direction: row;
+    margin-right: 4rem;
+}
+
+
+.taille2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+
+.prixPizza1{
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.prixPizza2{
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.carteMenu{
+    border: 20px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:rgb(0, 0, 0, .5);
+}
+
+
+.pizza{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid  black;
+    max-width: 1100px;
+    align-items: center;
+    margin-top: 1.5px;
+}
+
+
+
+.nomPizza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+}
+
+
+
+.ingredientPizza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0 0.8rem;
+    text-align: center;
+}
+
+
+
+
+/*-------------------------------
+-   Localisation Banderole    -
+-------------------------------*/
+
+
+
+#localisationpizzeria{
+    height: 300px;
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.localisationTitre{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: var(--text-color);
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.grey {
+    width: 100%;
+    height: 80px;
+    background-color: var(--primary-dark);
+}
+
+.relative {
+    position: relative;
+}
+
+.sizeBanderole{
+    top: -200px;
+    left: calc(50% - 460px);
+    height: 400px;
+    width: 55rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+}
+
+
+
+.renderPizza{
+    height: 400px;
+    width: 400px;
+    background-image: url(/image.img/Pizza2.png);
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+
+/*-------------------------------
+-        Localisation         -
+-------------------------------*/
+
+
+.localisation{
+    background: var(--primary-dark);
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 4rem 0;
+}
+
+.container10{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.imageMap{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    height: 50%;
+    min-width: 390px;
+}
+
+
+.texteLocalisation{
+    width: 50%;
+    background: var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.spaceTexte{
+    margin: 15px;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.spaceTextetitre{
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    margin: 15px;
+    color: var(--text-color);
+    letter-spacing: 2px;
+}
+
+
+/*-------------------------------
+-           Footer            -
+-------------------------------*/
+
+
+footer{
+    width: 100%;
+    background: #0c0c0e;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem 1rem 2rem;
+    width: 100%;
+}
+
+.panneau{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.panneau div {
+    display: flex;
+}
+
+.panneau div p {
+    margin: 2rem 1rem;
+}
+
+
+.nosResaux{
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.infos1{
+    background-image: url(/image.img/Tripadvisor-\(white\)\ -\ Copie.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.infos2{
+    background-image: url(/image.img/Facebook-\(white\)\ -\ Copie.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.infos3{
+    background-image: url(/image.img/Instagram-\(white\)\ -\ Copie.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.infos4{
+    background-image: url(/image.img/Twitter-\(white\)\ -\ Copie.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.copyright{
+    color: var(--text-color);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.copyright p {
+    margin: 0 !important;
+}
