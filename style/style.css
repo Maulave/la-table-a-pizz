@@ -80,7 +80,7 @@ ul {
 }
 
 .header a:hover {
-    color:#e58e00;
+    color:var(--primary);
 }
 
 
@@ -277,7 +277,7 @@ button{
 
 
 button:hover{
-    background:var(--primary);
+    background:var(--primary-light);
 }
 
 
@@ -527,7 +527,7 @@ button:hover{
     flex-direction: column;
     justify-content:space-between;
 }
-.sizeBanderole
+
 .localisationTitre{
     width: 50%;
     height: 150px;
