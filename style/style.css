@@ -223,7 +223,7 @@ ul {
 }
 
 .imagebackground {
-    background-image: url('/la-table-a-pizz/image.img/pizza-fond2.jpg');
+    background-image: url('/image.img/pizza-fond2.jpg');
     height: 800px;
     width: 100%;
     background-size: cover;
@@ -409,7 +409,7 @@ button:hover{
 
 .cartepizza{
     width: 100%;
-    background-image: url("/la-table-a-pizz/image.img/Fond-menu5.png");
+    background-image: url("/image.img/Fond-menu5.png");
     background-size: 100% 100%;
     display: flex;
     flex-flow: column;
@@ -568,7 +568,7 @@ button:hover{
 .renderPizza{
     height: 400px;
     width: 400px;
-    background-image: url(/la-table-a-pizz/image.img/Pizza2.png);
+    background-image: url(/image.img/Pizza2.png);
     background-size: 100% 100%;
     z-index: 2;
 }
@@ -674,7 +674,7 @@ footer{
 }
 
 .infos1{
-    background-image: url(/la-table-a-pizz/image.img/Tripadvisor-\(white\)\ -\ Copie.png);
+    background-image: url(/image.img/Tripadvisor-\(white\)\ -\ Copie.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -683,7 +683,7 @@ footer{
 }
 
 .infos2{
-    background-image: url(/la-table-a-pizz/image.img/Facebook-\(white\)\ -\ Copie.png);
+    background-image: url(/image.img/Facebook-\(white\)\ -\ Copie.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -692,7 +692,7 @@ footer{
 }
 
 .infos3{
-    background-image: url(/la-table-a-pizz/image.img/Instagram-\(white\)\ -\ Copie.png);
+    background-image: url(/image.img/Instagram-\(white\)\ -\ Copie.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -701,7 +701,7 @@ footer{
 }
 
 .infos4{
-    background-image: url(/la-table-a-pizz/image.img/Twitter-\(white\)\ -\ Copie.png);
+    background-image: url(/image.img/Twitter-\(white\)\ -\ Copie.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -717,4 +717,125 @@ footer{
 
 .copyright p {
     margin: 0 !important;
+}
+
+@media only screen and (max-width: 768px)  {
+
+    .container2{
+        height: 35rem;
+    }
+    
+    .header {
+        display: none;
+    }
+    
+    #navMobile {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 0 0;
+    }
+    
+    .imagebackground {
+        background-position: calc(50% + 110px) calc(50% - 200px);
+    }
+    
+    .container10 {
+        flex-flow: column;
+    }
+    
+    .localisation {
+        padding-top: 0;
+    }
+    
+    iframe {
+        width: 100%;
+        padding-top: 1rem;
+    }
+    
+    .renderPizza {
+        display: none;
+    }
+    
+    .localisationTitre {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .sizeBanderole {
+        width: 100%;
+        left: auto;
+    }
+    
+    #localisationpizzeria {
+        height: 200px;
+    }
+    
+    .grey {
+        height: 50px;
+    }
+    
+    .texteLocalisation{
+        width: 100%;
+    }
+    
+    .spaceTextetitre {
+        margin: 0;
+    }
+    
+    .spaceTexte {
+        margin: 0.8rem 0;
+    }
+    
+    .imageMap {
+        min-width: 100%;
+    }
+    
+    .container3{
+        flex-flow: column;
+    }
+    
+    .space2 {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    
+    .space2 h2 {
+        margin-bottom: 0.6rem;
+    }
+    
+    .space5 {
+        width: 100%;
+    }
+    
+    .container4{
+        flex-flow: column-reverse;
+    }
+    
+    .titleblock {
+        width: 100%;
+        top: 160px !important; 
+        text-align: center;
+        left: 0 !important;
+    }
+    
+    .titleblock h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .texteTitre {
+        font-size: 16px;
+        text-align: center;
+        padding: 18px 2rem 6px 2rem;
+    }
+    
+    .titleblock button {
+        margin: 1rem 0;
+        height: 3rem;   
+    }
+    
+    .titleblock button a {
+        font-size: 18px;
+    }
 }
